@@ -1,0 +1,1780 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gruppo', cursive;
+    overflow: hidden;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+}
+
+/* everthing with position absolute goes here */
+
+
+
+
+
+/* title page */
+
+#wrapper {
+    z-index: 100;
+}
+
+#halfone {
+    background-color: #2d2926ff;
+    color: #e94b3cff;
+}
+
+#halfone, #halftwo {
+    width: 50vw;
+    height: 100vh;
+    font-size: 50px;
+    animation: black 0.5s linear;
+    position: absolute;
+}
+
+#halftwo {
+    background-color: #e94b3cff;
+    right: 0;
+    color: #2d2926ff;
+}
+
+#halfone h1, #halftwo h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 35vh;
+}
+
+#halfone h1 {
+    animation: slideup 1s linear;
+}
+
+#halftwo h1 {
+    animation: slidedown 1s linear;
+}
+
+#halfone p, #halftwo p {
+    position: absolute;
+    margin-top: 15vh;
+    font-size: 45px;
+}
+
+#halfone p {
+    text-align: right;
+    right: 2%;
+    animation: slidedownp 2s linear;
+}
+
+#halftwo p {
+    text-align: left;
+    margin-left: 2%;
+    animation: slideUpp 2s linear;
+}
+
+@keyframes slideup {
+    from {
+        margin-top: -50vh;
+    }
+
+    to {
+        margin-top: 35vh;
+    }
+}
+
+@keyframes slidedown {
+    from {
+        margin-top: 150vh;
+    }
+
+    to {
+        margin-top: 35vh;
+    }
+}
+
+@keyframes slidedownp {
+    from {
+        margin-top: 200vh;
+    }
+
+    to {
+        margin-top: 15vh;
+    }
+}
+
+@keyframes slideUpp {
+    from {
+        margin-top: -200vh;
+    }
+
+    to {
+        margin-top: 15vh;
+    }
+}
+
+.goUp {
+    margin-top: -120vh;
+    transition: 2s;
+}
+
+.goDown {
+    margin-top: 120vh;
+    transition: 2s;
+}
+
+@media screen and (max-width: 400px){
+
+    #halfone h1, #halftwo h1 {
+        font-size: 60px;
+    }
+
+    #halfone p, #halftwo p {
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+
+    #halfone p, #halftwo p {
+        font-size: 23px;
+    }
+}
+    
+
+
+/* title page */
+
+
+/* about page */
+
+#wrapper2 {
+    z-index: -1;
+}
+
+#halfone2 {
+    background-color: #e94b3cff;
+    color: #2d2926ff;
+}
+
+#halfone2, #halftwo2 {
+    width: 50vw;
+    height: 100vh;
+    font-size: 50px;
+    animation: black 0.5s linear;
+    position: absolute;
+}
+
+
+#halftwo2 {
+    background-color: #2d2926ff;
+    right: 0;
+    color: #e94b3cff;
+}
+
+#halfone2 h1, #halftwo2 h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 35vh;
+    text-align: center;
+}
+
+
+#halfone2 p {
+    position: absolute;
+    margin-top: 60vh;
+    font-size: 45px;
+    text-align: right;
+    margin-right: 5vw;
+}
+
+#halfone2 p {
+    right: 2%;
+}
+
+#halftwo2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15vh;
+}
+
+#halftwo2 a {
+    color: #e94b3cff;
+}
+
+@media screen and (max-width: 800px){
+    #halftwo2 p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #halftwo2 p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 338px){
+    #halftwo2 p {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 665px){
+    #halfone2 h1 {
+        font-size: 80px;
+    }
+
+    #halfone2 p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #halfone2 h1 {
+        font-size: 60px;
+    }
+
+    #halfone2 p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 401px){
+    #halfone2 h1 {
+        font-size: 45px;
+    }
+
+    #halfone2 p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 301px){
+    #halfone2 h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-height: 580px){
+    #halftwo2 p {
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-height: 494px){
+    #halftwo2 p {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-height: 403px){
+    #halftwo2 p {
+        font-size: 35px;
+    }
+}
+
+
+
+/* about */
+
+
+/* portfolio */
+
+#halfone3 {
+    background-color: #2d2926ff;
+    color: #e94b3cff;
+}
+
+#halfone3, #halftwo3 {
+    width: 50vw;
+    height: 100vh;
+    font-size: 50px;
+    animation: black 0.5s linear;
+    position: absolute;
+}
+
+#halftwo3 {
+    background-color: #e94b3cff;
+    right: 0;
+    color: #2d2926ff;
+}
+
+#halfone3 h1, #halftwo3 h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 35vh;
+}
+
+#halfone3 p, #halftwo3 p {
+    position: absolute;
+    margin-top: 10vh;
+    font-size: 45px;
+}
+
+#halfone3 p {
+    text-align: right;
+    right: 2%;
+}
+
+#halftwo3 p {
+    text-align: left;
+    margin-left: 2%;
+}
+
+#links1 p, #links1 a {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color: #e94b3cff;
+    margin-top: 20vh;
+}
+
+#links2 p, #links2 a {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color: #e94b3cff;
+    margin-top: 10vh;
+    display: none;
+}
+
+@media screen and (max-width: 400px){
+
+    #halfone3 h1, #halftwo3 h1 {
+        font-size: 55px;
+    }
+    
+}
+
+@media screen and (max-width: 680px){
+
+    #halfone3 h1, #halftwo3 h1 {
+        font-size: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 364px){
+
+    #halfone3 h1, #halftwo3 h1 {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    #links1 p, #links1 a {
+        display: none;
+    }
+    
+    #links2 p, #links2 a {
+        display: block;
+    }
+    
+}
+
+
+/* portfolio */
+
+
+
+
+/* purchase */
+
+    #halfone4 {
+        background-color: #e94b3cff;
+        color: #2d2926ff;
+    }
+    
+    #halfone4, #halftwo4 {
+        width: 50vw;
+        height: 100vh;
+        font-size: 50px;
+        animation: black 0.5s linear;
+        position: absolute;
+    }
+    
+    #halftwo4 {
+        background-color: #2d2926ff;
+        right: 0;
+        color: #e94b3cff;
+    }
+
+    #halfone4 h1 {
+        text-align: right;
+    }
+
+    #basic {
+        background-color: rgb(45, 41, 38);
+        margin-top: 5%;
+        position: absolute;
+        left: 1vw;
+        width: 60%;
+        height: 70%;
+        z-index: 0;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    #halfone4 button {
+        width: 65%;
+        height: 10%;
+        position: absolute;
+        top: 75%;
+        font-size: 27px;
+        left: 32.5%;
+        transform: translate(-50%, 0%);
+        border-radius: 30px;
+        box-shadow: 0 0 50px 5px;
+        border: 2px solid black;
+        background-color: #2d2926ff;
+        color: #e94b3cff;
+        cursor: pointer;
+        
+    }
+
+    #halfone4 button:hover {
+        background-color: #e94b3cff;
+        color: #2d2926ff;
+        transition: 1s;
+    }
+
+    #premium {
+        background-color: #e94b3cff;
+        margin-top: 5%;
+        position: absolute;
+        right: 1vw;
+        width: 60%;
+        height: 70%;
+        z-index: 0;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    #halftwo4 button {
+        width: 65%;
+        height: 10%;
+        position: absolute;
+        top: 75%;
+        font-size: 27px;
+        left: 67.5%;
+        transform: translate(-50%, 0%);
+        border-radius: 30px;
+        box-shadow: 0 0 50px 5px;
+        border: 2px solid black;
+        background-color: #e94b3cff;
+        color: #2d2926ff;
+        
+    }
+
+    #halftwo4 button:hover {
+        background-color: #2d2926ff;
+        color: #e94b3cff;
+        transition: 1s;
+    }
+
+    #standard {
+        background-color: #2d2926ff;
+        margin-top: 2%;
+        position: absolute;
+        right: -13vw;
+        width: 60%;
+        height: 75%;
+        z-index: 0;
+        border-radius: 50px;
+    }
+
+    #standard2 {
+        background-color: #e94b3cff;
+        margin-top: 2%;
+        position: absolute;
+        left: -13vw;
+        width: 60%;
+        height: 75%;
+        z-index: 0;
+        border-radius: 50px;
+    }
+
+
+    #basic:hover, #premium:hover {
+        box-shadow: 0 0 50px 5px;
+    }
+
+    #mid button {
+        position: absolute;
+        top: 78%;
+        height: 10%;
+        width: 20%;
+        left: 32.5%;
+        font-size: 27px;
+        border-radius: 30px;
+        background-color: #2d2926ff; 
+        border: 2px solid black;
+        color: #e94b3cff;
+        transition: 1s;
+    }
+
+    #mid2 button {
+        position: absolute;
+        top: 78%;
+        height: 10%;
+        width: 40%;
+        left: 14.5%;
+        font-size: 27px;
+        border-radius: 30px;
+        background-color: #e94b3cff;
+        border: 2px solid black;
+        color: #2d2926ff;
+        transition: 1s;;
+    }
+
+
+    #shadow button {
+        position: absolute;
+        top: 78%;
+        height: 10%;
+        width: 34.6%;
+        left: 32.6%;
+        border-radius: 30px;
+        background-color: transparent;
+        border: none;
+        color: #2d2926ff;
+        box-shadow: 0 0 50px 5px #e94b3cff;
+        cursor: pointer;
+    }
+
+
+    #basic h3 {
+        color: #e94b3cff;
+        margin-left: 2%;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    #basic h2, #premium h2 {
+        text-align: center;
+        color: #e94b3cff;
+        font-size: 50px;
+    }
+
+    #premium h2 {
+        color: #2d2926ff;
+    }
+
+    #premium h3 {
+        font-size: 40px;
+        margin-top: 50px;
+        color: #2d2926ff;
+        margin-left: 2%;
+    }
+
+
+    #text h2 {
+        position: absolute;
+        color: white;
+        margin-top: 14vh;
+        font-size: 50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: block;
+    }
+
+    #text p {
+        position: absolute;
+        color: white;
+        margin-top: 21vh;
+        font-size: 50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    #text:hover {
+        cursor: pointer;
+    }
+
+
+    #text2:hover {
+        cursor: pointer;
+    }
+
+    #text h3 {
+        position: absolute;
+        color: white;
+        margin-top: 32vh;
+        font-size: 40px;
+        left: 34%;
+    }
+
+
+    #bottomLinks a {
+        position: absolute;
+        font-size: 40px;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: #e94b3cff;
+        text-decoration: underline;
+    }
+
+    span {
+        color: #2d2926ff;
+        text-decoration: underline;
+    }
+
+    #bottomLinks2 a {
+        position: absolute;
+        font-size: 40px;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: #e94b3cff;
+        text-decoration: underline;
+    }
+
+
+    #text2 h2 {
+        position: absolute;
+        color: white;
+        margin-top: 14vh;
+        font-size: 45px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+    }
+
+    #text2 p {
+        position: absolute;
+        color: white;
+        margin-top: 20vh;
+        font-size: 45px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+    }
+
+    #text2 h3 {
+        position: absolute;
+        color: white;
+        margin-top: 30vh;
+        font-size: 35px;
+        left: 34%;
+        display: none;
+    }
+
+
+    
+
+    @media screen and (max-width: 1416px) {
+
+        #text h2 {
+          display: none;
+        }
+
+        #text p {
+            display: none;
+        }
+
+        #text h3 {
+            display: none;
+        }
+
+
+
+        #text2 h2 {
+            display: block;
+        }
+        
+
+        #text2 p {
+            display: block;
+        }
+
+        #text2 h3 {
+            display: block;
+        }
+    }
+
+    #mobileBasic {
+        top: 6vh;
+        width: 55%;
+        height: 29%;
+        background-color: #2d2926ff;
+        position: absolute;
+        left: 32%;
+        transform: translate(-50%, 0%);
+        border-radius: 50px;
+        box-shadow: 0 0 50px 5px;
+        display: none;
+    }
+
+    #mobileBasic2 {
+        top: 6vh;
+        width: 45%;
+        height: 29%;
+        background-color: #e94b3cff;
+        position: absolute;
+        left: 72.5%;
+        transform: translate(-50%, 0%);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 0 50px 5px #e94b3cff;
+        display: none;
+    }
+
+    #mobileStandard {
+        top: 36vh;
+        width: 48%;
+        height: 29%;
+        background-color: #2d2926ff;
+        position: absolute;
+        left: 26.5%;
+        transform: translate(-50%, 0%);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 0 0 50px 5px;
+        display: none;
+    }
+
+    #mobileStandard2 {
+        top: 36vh;
+        width: 48%;
+        height: 29%;
+        background-color: #e94b3cff;
+        position: absolute;
+        left: 74%;
+        transform: translate(-50%, 0%);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 0 50px 5px #e94b3cff;
+        display: none;
+    }
+
+
+    #mobilePremium {
+        top: 66vh;
+        width: 45%;
+        height: 29%;
+        background-color: #2d2926ff;
+        position: absolute;
+        left: 27.5%;
+        transform: translate(-50%, 0%);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 0 0 50px 5px;
+        display: none;
+    }
+
+    #mobilePremium2 {
+        top: 66vh;
+        width: 45%;
+        height: 29%;
+        background-color: #e94b3cff;
+        position: absolute;
+        left: 72.5%;
+        transform: translate(-50%, 0%);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 0 50px 5px #e94b3cff;
+        display: none;
+    }
+
+    #mobileBasicText h1 {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        margin-top: 7vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobileBasicText p {
+        position: absolute;
+        color: white;
+        margin-top: 12vh;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobileStandardText h1 {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        margin-top: 7vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobileStandardText p {
+        position: absolute;
+        color: white;
+        margin-top: 12vh;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobilePremiumText h1 {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        margin-top: 7vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobilePremiumText p {
+        position: absolute;
+        color: white;
+        margin-top: 12vh;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, 0%);
+        display: none;
+        text-align: center;
+    }
+
+    #mobileBasicText637, #mobileStandardText637, #mobilePremiumText637 {
+        display: none;
+    }
+
+    #mobileBasicText637 h1 {
+        position: absolute;
+        color: white;
+        font-size: 35px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileBasicText637 p {
+        position: absolute;
+        color: white;
+        margin-top: 13vh;
+        left: 50%;
+        font-size: 25px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText637 h1 {
+        position: absolute;
+        color: white;
+        font-size: 35px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText637 p {
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText637 h1 {
+        position: absolute;
+        color: white;
+        font-size: 35px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText637 p {
+        position: absolute;
+        color: white;
+        left: 50%;
+        font-size: 25px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+        display: none;
+    }
+
+
+    #mobileBasicText367 h1 {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileBasicText367 p {
+        position: absolute;
+        color: white;
+        margin-top: 13vh;
+        left: 50%;
+        font-size: 20px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText367 h1 {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText367 p {
+        position: absolute;
+        color: white;
+        margin-top: 13vh;
+        left: 50%;
+        font-size: 20px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText367 h1 {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText367 p {
+        position: absolute;
+        color: white;
+        left: 50%;
+        font-size: 20px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileBasicText900h, #mobileStandardText900h, #mobilePremiumText900h {
+        display: none;
+    }
+
+    #mobileBasicText900h h1 {
+        position: absolute;
+        color: white;
+        font-size: 28px;
+        margin-top: 6vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileBasicText900h p {
+        position: absolute;
+        color: white;
+        margin-top: 12vh;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText900h h1 {
+        position: absolute;
+        color: white;
+        font-size: 28px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobileStandardText900h p {
+        position: absolute;
+        color: white;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText900h h1 {
+        position: absolute;
+        color: white;
+        font-size: 28px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    #mobilePremiumText900h p {
+        position: absolute;
+        color: white;
+        left: 50%;
+        font-size: 18px;
+        transform: translate(-50%, 0%);
+        text-align: center;
+    }
+
+    .mobileBasicBtn button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 27vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobileBasicBtn2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 27vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }    
+
+    .mobileStandardBtn button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 45%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 58vh;
+        left: 27.5%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobileStandardBtn2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 45%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 58vh;
+        left: 72.5%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobilePremiumBtn button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 87vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobilePremiumBtn2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 5vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 87vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobileBasicBtn637 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 27.5vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileBasicBtn637-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 27.5vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileStandardBtn637 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 58.25vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileStandardBtn637-2 button  {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 58.25vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobilePremiumBtn637 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 89vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobilePremiumBtn637-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 4vh;
+        font-size: 25px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 89vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileBasicBtn367 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 27.5vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileBasicBtn367-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 27.5vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    .mobileStandardBtn367 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 59.5vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileStandardBtn367-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 59.5vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    .mobilePremiumBtn367 button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 88vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobilePremiumBtn367-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 20px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 88vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    .mobileBasicBtn900h button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 27vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileBasicBtn900h-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 27vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    .mobileStandardText900h button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 58vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobileStandardText900h-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 58vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    .mobilePremiumText900h button {
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #e94b3cff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: none;
+        text-align: right;
+        margin-top: 88vh;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobilePremiumText900h-2 button {
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #2d2926ff;
+        width: 40%;
+        height: 3.5vh;
+        font-size: 22.5px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-left: none;
+        text-align: left;
+        margin-top: 88vh;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        color: white;
+        cursor: pointer; 
+    }
+
+    @media screen and (max-width: 1139px) {
+
+        #basic h3 {
+            font-size: 30px;
+        }
+
+        #premium h3 {
+            font-size: 30px;
+        }
+
+        #text2 h2 {
+            font-size: 40px;
+        }
+
+
+        #basic h2 {
+            font-size: 40px;
+        }
+
+        #premium h2 {
+            font-size: 40px;
+        }
+
+    }
+
+    @media screen and (max-width: 990px) {
+        #basic {
+            display: none;
+        }
+
+        #standard {
+            display: none;
+        }
+
+        #standard2 {
+            display: none;
+        }
+
+        #premium {
+            display: none;
+        }
+
+        #text2 {
+            display: none;
+        }
+
+        #bottomLinks {
+            display: none;
+        }
+
+        #bottomLinks2 {
+            display: none;
+        }
+
+        #shadow {
+            display: none;
+        }
+
+        #mid {
+            display: none;
+        }
+
+        #mid2 {
+            display: none;
+        }
+
+        .purchaseBasicBtn button {
+            display: none;
+        }
+
+        .purchasePremiumBtn button {
+            display: none;
+        }
+
+        #halfone4 h1 {
+            font-size: 50px;
+        }
+
+        #halftwo4 h1 {
+            font-size: 50px;
+        }
+
+        #mobileBasic, #mobileBasic2, #mobileStandard, #mobileStandard2, #mobilePremium, #mobilePremium2, #mobilePremiumText h1, #mobilePremiumText p,  #mobileStandardText p,  #mobileStandardText h1, #mobileBasicText p,  #mobileBasicText h1 {
+            display: block;
+        }
+
+        .mobileBasicBtn button, .mobileBasicBtn2 button, .mobileStandardBtn button, .mobileStandardBtn2 button, .mobilePremiumBtn button, .mobilePremiumBtn2 button {
+            display: block;
+        }
+
+    }
+
+    @media screen and (max-width: 637px) {
+        #mobileBasicText, #mobileStandardText, #mobilePremiumText, .mobileBasicBtn, .mobileBasicBtn2 {
+            display: none;
+        }
+
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            visibility: hidden;
+        }
+
+        #mobileBasicText900h , #mobileStandardText900h, #mobilePremiumText900h {
+            visibility: hidden;
+        }
+
+        #mobileBasicText637, #mobileStandardText637, #mobilePremiumText637 {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 637px) {
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            visibility: hidden;
+        }
+    }
+
+    @media screen and (max-width: 484px) {
+        .mobileStandardBtn637 button {
+            margin-top: 60.5vh;
+            height: 3.5vh;
+            font-size: 20px;
+        }
+
+        .mobileStandardBtn637-2 button {
+            margin-top: 60.5vh;
+            height: 3.5vh;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-height: 776px) {
+
+        .mobilePremiumText900h button, .mobilePremiumText900h-2 button, .mobileStandardText900h button, .mobileStandardText900h-2 button, .mobileBasicBtn900h button, .mobileBasicBtn900h-2 button {
+            font-size: 17.5px;
+        }
+    }
+
+    @media screen and (max-height: 629px) {
+        .mobilePremiumText900h button, .mobilePremiumText900h-2 button, .mobileStandardText900h button, .mobileStandardText900h-2 button, .mobileBasicBtn900h button, .mobileBasicBtn900h-2 button {
+            height: 5vh;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            display: block;
+            visibility: visible;
+        }
+
+        #mobileBasicText637, #mobileStandardText637, #mobilePremiumText637 {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-height: 900px){
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            display: none;
+        }
+
+        #mobileBasicText367 h1, #mobileStandardText367 h1, #mobilePremiumText367 h1 {
+            font-size: 23px;
+        }
+
+        #mobileBasicText367 p, #mobileStandardText367 p, #mobilePremiumText367 p {
+            font-size: 18px;
+        }
+
+        #mobileBasicText637 h1, #mobileStandardText637 h1, #mobilePremiumText637 h1 {
+            font-size: 27px;
+        }        
+
+        #mobileBasicText637 p, #mobileStandardText637 p, #mobilePremiumText637 p {
+            font-size: 20px;
+        }
+
+        #mobileBasicText900h , #mobileStandardText900h, #mobilePremiumText900h {
+            display: block;
+            visibility: visible;
+        }
+
+        #halfone4 h1 {
+            font-size: 38px;
+        }
+
+        #halftwo4 h1 {
+            font-size: 38px;
+        }
+    }
+
+    @media screen and (max-height: 710px) {
+        #mobileBasicText637 h1, #mobileStandardText637 h1, #mobilePremiumText637 h1 {
+            font-size: 25px;
+        }
+
+        #mobileBasicText637 p, #mobileStandardText637 p, #mobilePremiumText637 p {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 367px) {
+        #mobileBasicText900h, #mobileStandardText900h, #mobilePremiumText900h {
+            display: none;
+        }
+
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 367px) {
+        #mobileBasicText900h, #mobileStandardText900h, #mobilePremiumText900h {
+            display: block;
+            visibility: visible;
+        }
+
+        #mobileBasicText367, #mobileStandardText367, #mobilePremiumText367 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-height: 820px) {
+        #mobileBasicText900h h1, #mobileStandardText900h h1, #mobilePremiumText900h h1 {
+            font-size: 22.5px;
+        }
+    }
+
+    @media screen and (max-height: 736px) {
+        #mobileBasicText900h p, #mobileStandardText900h p, #mobilePremiumText900h p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-height: 640px) {
+        #mobileBasicText900h h1, #mobileStandardText900h h1, #mobilePremiumText900h h1 {
+            font-size: 20px;
+        }
+    }
+
+    /* purchase */
+
+
+
+
+  

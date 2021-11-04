@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="basic.css">
+    <title> Kruz King | Purchase Basic </title>
+</head>
+<body>
+    <div id="basicHalfOne">
+        <h1> BASIC </h1>
+    </div>
+    <div id="basicHalfTwo">
+        <h1> PACKAGE</h1>
+    </div>
+    <div id="form">
+    <form action="https://formsubmit.co/c30281b116c11f08f08b7b952fac52aa" method="POST" id="domainForm" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New submission (Basic Package)!">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <h1> WOULD YOU LIKE PAID HOSTING </h1>
+        <div class="yesHosting"><label><input type="radio" name="hosting" value="YesPaidHosting" onclick="paidHosting()" id="rdBtn1">YES</label></div>
+        <div class="noHosting"><label><input type="radio" name="hosting" value="NoPaidHosting" onclick="noPaidHosting()" required id="rdBtn2">NO</label></div>
+
+        
+        <div id="hostingOptions">
+            <div class="domain">
+         WHAT DOMAIN WOULD YOU LIKE
+        </div>
+
+        <div class="domainInput">
+            <input type="text" placeholder=" www.example.com" name="domain" id="domainName">
+        </div>
+        <div class="hostingYears">
+            HOW MANY YEARS OF HOSTING WOULD YOU LIKE
+        </div>
+        <div class="hostingYearsInput">
+            <label><input type="radio" name="hostingYears" value="1yearHosting" checked> 1 YEAR | 00$</label>
+            <div class="2yearsHosting"><label><input type="radio" name="hostingYears" value="2yearHosting"> 2 YEARS | 00$</label></div>
+            <div class="3yearsHosting"><label><input type="radio" name="hostingYears" value="3yearHosting"> 3 YEARS | 00$</label></div>
+            <div class="4yearsHosting"><label><input type="radio" name="hostingYears" value="4yearHosting"> 4 YEARS | 00$</label></div>
+            <div class="5yearsHosting"><label><input type="radio" name="hostingYears" value="5yearHosting"> 5 YEARS | 00$</label></div>
+        </div>
+    </div>
+
+    <div id="neededOptions">
+        <div id="websiteExplanation">
+            EXPLAIN THE DETAILS OF THE WEBSITE YOU WANT
+        </div>
+
+        <div id="websiteExplanationInput">
+            <textarea value="websiteExplanation" name="textArea" placeholder="Enter text here..." required></textarea>
+        </div>
+
+        <div id="photoshopMockups">
+           DESIGN MOCK UP (OPTIONAL)
+        </div>
+
+        <div id="photopshopMockupsInput">
+         <input type="file" name="photopshopMockup" value="photoShopMockup" accept="image/png, image/jpg,
+         image/jpeg">
+        </div>
+
+
+        <div id="logo">
+            LOGO (OPTIONAL)
+         </div>
+ 
+         <div id="logoInput">
+          <input type="file" name="logo" value="logo" accept="image/png, image/jpg,
+          image/jpeg">
+         </div>
+
+         <div id="email">
+             YOUR EMAIL
+         </div>
+         <div id="emailInput">
+             <input type="email" name="email" placeholder="Email..." required>
+         </div>
+
+    </div>
+    <div id="submitBtn">
+    <button type="submit">SUB</button>
+    <div id="submitBtn2"> <button type="submit" style="position: absolute;">MIT</button></div>
+</div>
+    </form>
+</div>
+
+
+<script>
+    var submitBtn = document.getElementById("submitBtn");
+    submitBtn.style.visibility = "hidden";
+
+    var rdBtn1 = document.getElementById("rdBtn1");
+    var rdBtn2 = document.getElementById("rdBtn2");
+
+    function paidHosting() {
+        var hostingOptions = document.getElementById("hostingOptions");
+        var basicHalfOne = document.getElementById("basicHalfOne");
+        var basicHalfTwo = document.getElementById("basicHalfTwo");
+        var domainName = document.getElementById("domainName");
+        var form = document.getElementById("domainForm");
+
+        var websiteExplanation = document.getElementById("websiteExplanation");
+        var websiteExplanationInput = document.getElementById("websiteExplanationInput");
+        var photoshopMockups = document.getElementById("photoshopMockups");
+        var photopshopMockupsInput = document.getElementById("photopshopMockupsInput");
+        var logo = document.getElementById("logo");
+        var logoInput = document.getElementById("logoInput");
+        var email = document.getElementById("email");
+        var emailInput = document.getElementById("emailInput");
+        var submitBtn2 = document.getElementById("submitBtn2");
+
+        websiteExplanation.style.marginTop = "120vh";
+        websiteExplanationInput.style.marginTop = "135vh";
+        photoshopMockups.style.marginTop = "180vh";
+        photopshopMockupsInput.style.marginTop = "200vh";
+        logo.style.marginTop = "220vh";
+        logoInput.style.marginTop = "240vh";
+        email.style.marginTop = "260vh";
+        emailInput.style.marginTop = "272.5vh";
+
+        submitBtn.style.visibility = "visible";
+        submitBtn.style.marginTop = "290vh";
+        submitBtn.style.position = "absolute";
+        submitBtn.style.left = "30vw";
+
+        basicHalfOne.style.height = "300%";
+        basicHalfTwo.style.height = "300%";
+        hostingOptions.style.display = "block";
+
+
+
+        var rdBtn1Checked = document.querySelector('input[name = "gender"]:checked');
+
+
+
+        if(rdBtn1Checked != null){
+            
+  
+        form.addEventListener('submit', (e) => {
+            let messages = [];
+            if (domainName.value === '') {
+                console.error('There is no domain');
+                console.log(messages);
+                messages.push('Error There is no domain');
+            }
+
+            if (domainName.value.length <= 3) {
+                console.error('Not a valid domain');
+                console.log(messages);
+                messages.push('Error not a valid domain');
+            }
+
+            if (messages.length > 0) {
+                e.preventDefault();
+                alert("Please enter a valid domain");
+            }
+        })
+
+       
+    }
+
+
+        function myFunction(x) {
+    if (x.matches) {
+        basicHalfOne.style.height = "370%";
+        basicHalfTwo.style.height = "370%";
+        submitBtn.style.marginTop = "310vh";
+    }
+    // if (y.matches) {
+
+    // }
+  }
+
+    var x = window.matchMedia("(max-height: 880px)")
+    // var y = window.matchMedia("(max-height: 728px)")
+        myFunction(x)
+        x.addListener(myFunction)
+
+    }
+
+    function noPaidHosting() {
+
+        var hostingOptions = document.getElementById("hostingOptions");
+        var basicHalfOne = document.getElementById("basicHalfOne");
+        var basicHalfTwo = document.getElementById("basicHalfTwo");
+
+
+        var websiteExplanation = document.getElementById("websiteExplanation");
+        var websiteExplanationInput = document.getElementById("websiteExplanationInput");
+        var photoshopMockups = document.getElementById("photoshopMockups");
+        var photopshopMockupsInput = document.getElementById("photopshopMockupsInput");
+        var logo = document.getElementById("logo");
+        var logoInput = document.getElementById("logoInput");
+        var email = document.getElementById("email");
+        var emailInput = document.getElementById("emailInput");
+
+
+        basicHalfOne.style.height = "260vh";
+        basicHalfTwo.style.height = "260vh";
+        hostingOptions.style.display = "none";
+
+
+        websiteExplanation.style.marginTop = "40vh";
+        websiteExplanationInput.style.marginTop = "55vh";
+        photoshopMockups.style.marginTop = "100vh";
+        photopshopMockupsInput.style.marginTop = "115vh";
+        logo.style.marginTop = "135vh";
+        logoInput.style.marginTop = "150vh";
+        email.style.marginTop = "175vh";
+        emailInput.style.marginTop = '190vh';
+
+        submitBtn.style.visibility = "visible";
+        submitBtn.style.marginTop = "220vh";
+        submitBtn.style.position = "absolute";
+        submitBtn.style.left = "30vw";
+    }
+    
+    alert(window.innerWidth);
+
+</script>
+</body>
+</html>
